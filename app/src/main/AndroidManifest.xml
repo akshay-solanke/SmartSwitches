@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dreamz.smartswitches">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartSwitches">
+        <activity android:name=".StudyRoom"></activity>
+        <activity android:name=".StoreRoom" />
+        <activity android:name=".Kitchen" />
+        <activity android:name=".BathRoom" />
+        <activity android:name=".LivingRoom" />
+        <activity
+            android:name=".BedRoom"
+            android:theme="@style/Theme.SmartSwitches" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.SmartSwitches">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
